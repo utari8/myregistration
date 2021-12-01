@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{    
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.container{
+    max-width: 700px;
+    width: 100%;
+    background: white;
+    padding: 20px 30px;
+    border-radius: 5px;
+}
+.container h1{
+    position: relative;
+    text-align: center;
+    padding: 10px;
+
+}
+/* untuk merubah posisi box */
+.container form .box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+/* untuk merubah posisi inputan */
+form .box .a{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    
+}
+form .box .b{
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+    
+}
+/* untuk merubah posisi span nama */
+.box .a .la{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.box .b .la{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+/* untuk merubah shape input */
+.box .a input{
+    height: 45px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px; /*menata posisi placeholder */
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+/* merubah tata letak input radio */
+.box .b .cat{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.b .cat label{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.b .cat input[type="radio"]{
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+form .button{
+    height: 40px;
+    margin: 30px 10px 0;
+}
+form .button input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    background: #71b7e6;
+    letter-spacing: 1px;
+}
+form .button input:hover{
+    background: #38a0e6;
+}
+@media(max-width:500px){
+    .container{
+        max-width: 100%;
+    }
+    form .box .a{
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    form .box .cat{
+        width: 100%;
+    }
+    .container form .box{
+        max-height: 300px;
+        overflow-y: scroll;
+    }
+    .box::-webkit-scrollbar{
+        width: 0;
+    }
+}
+
+
